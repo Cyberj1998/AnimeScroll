@@ -1,0 +1,10 @@
+images.map((image, index) => (
+  <motion.img 
+    key={index} 
+    src={image.src}  // Use image.src to access the image path
+    alt={anime-${index}}  // Provide a unique alt text for each image
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    transition={{ duration: 1.5 }} 
+  />
+));
